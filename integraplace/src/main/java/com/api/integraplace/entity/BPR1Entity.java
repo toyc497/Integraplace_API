@@ -27,52 +27,49 @@ public class BPR1Entity {
     @NotNull
     private String fullname;
 
-    @Column(name = "cpf", length = 11, unique = true)
+    @Column(name = "cpf_cnpj", length = 11, unique = true)
     @NotNull
-    private Long cpf;
+    private Long cpf_cnpj;
 
-    @Column(name = "age", length = 3, unique = false)
-    private Long age;
+    @Column(name = "age", length = 3)
+    private Integer age;
 
-    @Column(name="customer")
-    private boolean customer;
+    @Column(name="type", length = 1)
+    @NotNull
+    private String type;
 
-    @Column(name="supplier")
-    private boolean supplier;
-
-    @Column(name = "email", length = 50, unique = false)
+    @Column(name = "email", length = 50)
     @Email
     @NotNull
     private String email;
 
-    @Column(name = "phone1", length = 11, unique = false)
+    @Column(name = "phone1", length = 11)
     @NotNull
     private Long phone1;
 
-    @Column(name = "phone2", length = 11, unique = false)
+    @Column(name = "phone2", length = 11)
     private Long phone2;
 
-    @Column(name = "cep", length = 8, unique = false)
+    @Column(name = "cep", length = 8)
     @NotNull
     private Long cep;
 
-    @Column(name="address", length = 50, unique=false)
+    @Column(name="address", length = 50)
     @NotNull
     private String address;
 
-    @Column(name = "streetnum", length = 5, unique = false)
-    @NotNull
+    @Column(name = "streetnum", length = 5)
     private Integer streetnum;
 
-    @Column(name="city", length = 50, unique=false)
+    @Column(name="city", length = 50)
     @NotNull
     private String city;
 
-    @Column(name="block", length = 50, unique=false)
+    @Column(name="block", length = 50)
     @NotNull
     private String block;
 
-    @Column(name="uf", length = 2, unique=false)
+    @Column(name="uf", length = 2)
     @NotNull
     private String uf;
 

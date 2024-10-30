@@ -36,10 +36,6 @@ public class ORDSEntity {
     @JoinColumn(name="bpr1_client")
     private BPR1Entity bpr1Client;
 
-    @ManyToOne
-    @JoinColumn(name="bpr2_client")
-    private BPR2Entity bpr2Client;
-
     @OneToMany(mappedBy = "orderFather",cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JsonIgnore
     private List<ORITEntity> item_collection = new ArrayList<>();

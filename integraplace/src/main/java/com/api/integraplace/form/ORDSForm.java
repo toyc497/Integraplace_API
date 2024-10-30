@@ -1,7 +1,5 @@
 package com.api.integraplace.form;
 
-import com.api.integraplace.entity.BPR1Entity;
-import com.api.integraplace.entity.BPR2Entity;
 import lombok.Data;
 
 import java.util.Date;
